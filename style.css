@@ -59,7 +59,7 @@ main {
 #block-2 {
   padding: 1% 2em;
   margin-left: -0.5em;
-  width: 90%;
+  /* width: 90%; */
 }
 
 #block-2 div {
@@ -112,7 +112,7 @@ main {
 }
 
 #form input::placeholder {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.5px;
 }
@@ -201,14 +201,14 @@ form a {
 }
 
 @media screen and (max-width: 770px) {
-  main {
+  /* main {
     text-align: center;
     padding: 25vh 5vh;
-  }
+  } */
 
   .box-cont {
     flex-direction: column;
-    padding: 3% 9vw;
+    padding: 25vh 5% 10vh;
     text-align: center;
   }
 
@@ -233,7 +233,7 @@ form a {
     font-size: 13px;
   }
 
-  #block-2 {
+  #block-2 div {
     margin-left: 0em;
     width: 100%;
     text-align: center;
@@ -248,6 +248,9 @@ form a {
     margin-right: 0em;
     width: 100%;
   }
+  #form {
+    padding: 1.5em 4vh 1em;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -257,7 +260,7 @@ form a {
 
   .box-cont {
     flex-direction: column;
-    padding: 2% 5vw;
+    padding: 2% 0;
     text-align: center;
   }
 
@@ -293,11 +296,35 @@ form a {
   #titl {
     margin-bottom: 1.3em;
   }
-
-  .btn {
-    font-size: 13px;
-  }
   #form input::placeholder {
     font-size: 11.5px;
+  }
+  .btn {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  #form {
+    padding: 1em 1em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main {
+    padding: 08em 1px;
+  }
+  .box-cont {
+    flex-direction: column;
+    padding: 1% 0.5vw;
+    text-align: center;
+  }
+  #form {
+    padding: 1.5em 1em 1em;
+  }
+
+  #form input {
+    margin-bottom: 20px;
+  }
+  #form input::placeholder {
+    font-size: 10px;
   }
 }
